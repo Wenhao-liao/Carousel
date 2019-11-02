@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#window{
+    width: 350px;
+    height: 197px;
+    overflow: hidden;
+    border: 5px solid red;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    transition: all 0.3s;
+}
+.active{
+    color: white;
+    background-color: red;
+    
+}
