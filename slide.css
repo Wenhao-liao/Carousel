@@ -1,21 +1,44 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#window{
+.window{
     width: 350px;
     height: 197px;
+    margin:20px auto;
     overflow: hidden;
-    border: 5px solid red;
 }
-.container{
-    display: flex;
-    justify-content: flex-start;
-    transition: all 0.3s;
+.images{
+    position: relative;
 }
-.active{
-    color: white;
-    background-color: red;
-    
+.images > img{
+    width: 100%;
+    transition:all .3s;
+}
+
+.images > img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.images > img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.images > img:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.images > img:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.images > img.right{
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
